@@ -1,0 +1,141 @@
+#include <stdio.h>
+
+float a,b,c;
+int opcion;                   /* variables globales */
+
+
+datos()                      /* funcion prototipo " sin paso y CON REGRESO "   regresa un valor pero no pide*/
+
+{
+    
+    
+    printf("ingresa un numero ");
+    scanf("%f",&a);
+    printf("ingresa un numero ");
+    scanf("%f",&b);
+    
+    return a,b;
+    
+}
+
+
+
+
+float suma()         
+
+{
+    
+    
+    datos();
+    c=a+b;
+    
+    return c;            /* Retorna ese valor cuando la funcion sea llamada */
+    
+    
+}
+
+float resta()         
+
+{
+    
+    
+    datos();
+    c=a-b;
+    
+    return c;
+    
+    
+    
+}
+
+float multiplicacion()         
+
+{
+   
+    
+    datos();
+    c=a*b;
+    
+    return c;
+    
+    
+}
+
+float divicion()         
+
+{
+   
+    
+    datos();
+    
+    c=a/b;
+   
+   return c;
+    
+    
+}
+
+
+
+
+
+int main()                       /*funcion principal*/
+
+{
+                 float ejemplo ;
+                  
+
+    printf("\n     Operaciones        ");
+    printf("\n************************");
+	printf("\n*   1.- suma           *");
+	printf("\n*   2.- resta          *");
+	printf("\n*   3.- multiplicacion *");
+	printf("\n*   4.- divicion       *");
+	printf("\n*                      *");
+	printf("\n************************");
+	printf("\n  :    ");
+	scanf("%d",&opcion);
+	
+	
+	switch (opcion) 
+	
+	{
+	
+	case 1 : 
+	    
+	    /*  suma();  */                               /* se puede llamar a la funcion de esta manera */
+	   printf("el resultado es %0.2f \n ",suma());   /* de esta manera es como si llamara la funcion desde antes del printf*/
+	                                                  
+	                      break;
+	                                         
+	case 2 : 
+	
+            
+              ejemplo = resta();          /* Otra forma de llamar la funcion es asignandole su valor a una VARIABLE y es como si la llamaramos normal , nos muestra todo lo que contiene*/
+             printf(" %f ",ejemplo);     /* Se GUARDA en una NUEVA VARIABLE porque la funcion esta regresando un valor */
+                                        /*entonces cuando se llame a esa VARIABLE ya va contener lo que returno la funcion*/
+                                      
+                        break;
+	                                         
+    case 3 : 
+    
+	   printf("el resultado es %0.2f \n ",multiplicacion());                           
+	  
+	                               break;
+	                                         
+    case 4 : 
+	         
+	         printf("el resultado es %0.2f \n ",divicion());                            
+	                        
+	                        
+	                          break;
+	                                         
+	
+	}                                         
+	                                                                               
+	                                         
+	
+   
+    
+}
+

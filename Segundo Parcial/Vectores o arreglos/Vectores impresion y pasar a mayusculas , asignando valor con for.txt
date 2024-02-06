@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+                      /* el 0 es para limpiar los vectores que no arroje basura si sobra espacio*/
+    char  n[20]={0};   /* los vectores siempre empizan desde el 0 y son espacios para meter valores*/
+    char ap[20]={0}; 
+    char am[20]={0};
+    
+    printf("ingresa tus nombres:\n  ");
+    scanf("%s",&n);
+    printf("ingresa tu apellido paterno:\n  ");
+    scanf("%s",&ap);
+    printf("ingresa tu apellido materno:\n  ");
+    scanf("%s",&am);
+
+    printf("te llamas : %s  %s  %s  ",n,ap,am);
+    printf("\n");
+    
+    
+    for (int i=0; i>=19; i++)      /* convertir caracter por caracter de una cadena a mayusculas*/
+      
+       {
+         n  [i] = toupper(n[i]);
+         ap [i] = toupper(ap[i]);
+         am [i] = toupper(am[i]);
+       }
+       
+       printf(" tu nombre en mayusculas es: \n %s %s %s " , n , ap , am);
+       printf("\n");
+       
+       
+       
+   
+     for (int i=19; i>=0; i--)     /* se inicia desde el 19 porque el ultimo valor no se cuenta es nulo*/
+    
+       {
+        printf(" %c ",n[i]);
+       }
+     
+     for (int i=19; i>=0; i--)     /* lo que va en corchetes es la posicion dentro del vector va de 0 a 19*/
+    
+       {
+        printf(" %c ",ap[i]);     /* gracias al for podemos asignar o manipular cada posicion del vector */
+       }
+    
+    for (int i=19; i>=0; i--) 
+    
+       {
+    
+        printf(" %c ",am[i]);
+        
+       }
+   
+       
+       
+      
+   
+   
+   
+   
+   
+    
+}

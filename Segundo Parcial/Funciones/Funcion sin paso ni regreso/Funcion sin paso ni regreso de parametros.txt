@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int a,b,c;     /* variables globales */
+
+suma()         /* funcion prototipo " sin paso , ni regreso " no regresan valor SOLO PROCESOS */
+
+{
+    
+    
+    printf("ingresa un numero ");
+    scanf("%d",&a);
+    printf("ingresa un numero ");
+    scanf("%d",&b);
+    c=a+b;
+    
+    printf("el resultado es %d \n ",c);
+    
+    
+}
+
+
+
+int main()                       /*funcion principal*/
+
+{
+    for (int i=0;i<10;i++)        /* un for solo para repetir la funcion (lo que contenga) */
+    {
+    
+    suma();                      /* llamado de la FUNCION */
+    
+    }
+}
+
+
+
+
+
+

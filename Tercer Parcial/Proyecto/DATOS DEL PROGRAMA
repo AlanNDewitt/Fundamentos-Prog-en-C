@@ -1,0 +1,78 @@
+CUENTAS CON SUS DATOS
+------------------------------------------------------------------------------------------------------------
+
+        Nombre, "Alan"
+		Apellido,"Suarez"
+		edad = 19 ;
+		Clabe_Inter_Bancaria = 123456789;
+		Numero_de_Cuenta = 987654321;
+		codigo = 1111;
+		saldo = 30500;
+
+		REFERENCIAS DE PAGO :
+
+		Servicio.Telmex,"REFtlmx201"
+		Servicio.Netflix,"REFntfx202"
+		Servicio.CFE, "REFcfel203"
+		Servicio.Agua,"REFwatr204"
+		Servicio.Telcel,"REFtelc205"
+		Servicio.ATyT,"REFatyt206"
+		Servicio.SKY,"REFskai207"
+		Servicio.Xbox,"REFxbox208"
+		Servicio.Apple,"REFaple209"
+		Servicio.Izzi,"REFiziz210"
+
+-------------------------------------------------------------------------------------------------------------
+
+        Nombre, "Lara"
+		Apellido,"Croft"
+		edad = 25 ;
+		Clabe_Inter_Bancaria = 124578963;
+		Numero_de_Cuenta = 147258369;
+		codigo = 2020;
+		saldo = 10500;
+
+        REFERENCIAS DE PAGO :
+
+		Servicio.Telmex ,"REFtlmx301"
+		Servicio.Netflix ,"REFntfx302"
+		Servicio.CFE, "REFcfel303"
+		Servicio.Agua,"REFwatr304"
+		Servicio.Telcel,"REFtelc305"
+		Servicio.ATyT,"REFatyt306"
+		Servicio.SKY,"REFskai307"
+		Servicio.Xbox,"REFxbox308"
+		Servicio.Apple,"REFaple309"
+		Servicio.Izzi,"REFiziz310"
+
+----------------------------------------------------------------------------------------------------------------
+
+        Nombre, "Fernando"
+		Apellido,"Ruiz"
+		edad = 30;
+		Clabe_Inter_Bancaria = 258753159;
+		Numero_de_Cuenta = 951235789;
+		codigo = 3001;
+		saldo = 0;
+
+        REFERENCIAS DE PAGO :
+
+		Servicio.Telmex ,"REFtlmx401"
+		Servicio.Netflix ,"REFntfx402"
+		Servicio.CFE, "REFcfel403"
+		Servicio.Agua,"REFwatr404"
+		Servicio.Telcel,"REFtelc405"
+		Servicio.ATyT,"REFatyt406"
+		Servicio.SKY,"REFskai407"
+		Servicio.Xbox,"REFxbox408"
+		Servicio.Apple,"REFaple409"
+		Servicio.Izzi,"REFiziz410"
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

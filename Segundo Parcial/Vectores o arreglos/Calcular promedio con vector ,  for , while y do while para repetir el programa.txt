@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+int main()
+{
+    float c[5];
+    int r;
+
+do {
+    
+
+    for (int i = 0; i<5; i++) {
+        
+        
+        printf("ingresa tu calificacion %i \n " , i+1); 
+        scanf("%f",&c[i]);
+        
+        while ( c[i] < 0 || c[i] > 10 )
+        {
+            printf("****** Dato invalido ******** \n");
+            printf("*Intentalo de nuevo        *\n");
+            printf("*ingresa tu calificacion %i *\n" , i+1); 
+            printf(":");
+            scanf("%f",&c[i]);
+        }
+        
+    }
+    
+    float promedio;
+    
+    promedio = ( c[0]+c[1]+c[2]+c[3]+c[4])/5 ;
+    printf("\n");
+    printf(" tu promedio es %0.2f \n" , promedio);
+    
+    
+    if ( (promedio > 7.2) && (promedio <= 10.00) ) 
+    
+    {
+        
+        printf("*** APROBASTE *** \n");
+        
+            if (promedio >= 7.2 && promedio <= 8.0 ) 
+            {
+                printf("puedes cursar ROBOTICA ");
+                
+            }
+        
+            if (promedio >= 8.1 && promedio <= 8.8 ) 
+            {
+                printf("puedes cursar MECATRONICA ");
+                
+            }
+            
+            
+            if (promedio >= 8.9 && promedio <= 9.9 ) 
+            {
+                printf("puedes cursar Humanidades II  ");
+                
+            }
+            
+            if (promedio == 10.00 ) 
+            {
+                printf(" Estas exento del Siguiente curso ");
+                
+            }
+        
+        
+    }
+     
+     else {
+         
+         printf(" N0 APROBASTE ");
+         
+          }    
+
+    
+        
+    
+    printf("\n \n Deseas calcular otro promedio?");
+    printf("*     SI = 1     NO = 0 \n");
+    printf(":");
+    scanf("%i",&r);
+    
+    while ( r != 1 && r != 0) 
+    {
+        printf("OPCION INVALIDA \n");
+        printf("\n");
+        printf("*     SI = 1     NO = 0 \n");
+        printf(":");
+        scanf("%i",&r);
+    }
+    
+    
+    
+}
+while (r == 1);
+    
+    
+}

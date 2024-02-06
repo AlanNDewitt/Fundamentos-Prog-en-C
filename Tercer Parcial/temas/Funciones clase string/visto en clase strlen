@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char nombre[100] ;
+    char letra;
+    int i , total=0;
+    
+    printf("Ingresa tu nombre : \n");
+    nombre[0]='\0';
+    fgets(nombre,100,stdin);
+    
+    
+    fflush(stdin);
+    
+    
+    printf("Ingresa la letra \n");
+    scanf("%c",&letra);
+    
+    
+    for(i=0;i<strlen(nombre);i++)
+    {
+        
+        if (letra == nombre[i])
+         total++;
+        
+    }
+    
+    
+    
+    printf("el numero de letras %c en la palabra %s  es %d ", letra  , nombre, total);
+    
+    
+    
+
+    
+}

@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <math.h>
+
+
+
+void raiz (float *n)
+{
+    
+    float r;
+    
+    for(int i=0;i<10;i++)
+    {
+         r = sqrt(*n);
+        printf("%0.2f \n", r  );
+        *n=*n+1;
+    }
+    
+}
+
+
+void potencia2 (float *n)
+{
+    float p;
+    
+    *n=1;
+    
+    for(int i=0;i<10;i++)
+    {
+         p = pow(*n,2);
+        printf("%0.2f \n", p  );
+        *n=*n+1;
+    }
+    
+}
+
+
+void potencia3 (float *n)
+{
+    float p;
+    
+    *n=1;
+    
+    for(int i=0;i<10;i++)
+    {
+         p = pow(*n,3);
+        printf("%0.2f \n", p  );
+        *n=*n+1;
+    }
+    
+}
+
+
+
+void main()
+{
+    float N=1;
+    
+    raiz(&N);
+    printf("\n\n\n\n\n");
+    potencia2(&N);
+    printf("\n\n\n\n\n");
+    potencia3(&N);
+    
+}

@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+int opcion;
+int calificaciones; 
+float cal;
+float CalTotal;
+float p;
+                             
+
+
+promedio () 
+
+{
+    
+    
+    printf("cuantas calificaciones tienes ");
+    scanf("%d", &calificaciones);
+    
+    while ( calificaciones <= 0 ) 
+    
+    {
+        printf(" INGRESA UN VALOR CORRECTO \n");
+        printf("cuantas calificaciones tienes ");
+        scanf("%d", &calificaciones);
+        
+    }
+   
+   
+   
+   
+   
+    for (int i=1 ; i <= calificaciones ; i++) 
+    
+    {
+        
+        
+        printf("ingresa tu calificacion %d ",i);
+        scanf("%f",&cal);
+        
+        
+        
+           while (cal < 0 || cal > 10) 
+        
+        
+           {
+               cal = 0 ;
+            printf(" INGRESA UN VALOR CORRECTO \n ");
+            printf("ingresa tu calificacion %d ",i);
+            scanf("%f",&cal);
+            
+         
+           }
+        
+        
+         CalTotal = CalTotal + cal;
+    }
+    
+    
+   p = CalTotal / calificaciones;
+   
+   printf("el promedio es : %0.2f " , p);
+    
+    
+    
+}
+
+
+
+
+int main()                       /*funcion principal*/
+
+{
+   do {
+    
+    promedio();
+    
+    printf("\n calcular otro promedio? \n");
+    printf("  SI = 1  NO = 0 ");
+    scanf("%d",&opcion);
+    
+    
+   } while (opcion == 1);
+    
+    
+}

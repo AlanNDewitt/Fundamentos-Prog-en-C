@@ -1,0 +1,145 @@
+#include <stdio.h>
+
+float a,b,c;
+int opcion;                   /* variables globales */
+
+
+ datos()              /* funciones  " CON PASO y CON REGRESO de parametros" la funcion requiere los valores para funcionar*/
+                     /* ¡ TE DOY ESTO Y ME DEVUELVES ESTO !*/
+
+{
+    
+    
+    printf("ingresa un numero ");
+    scanf("%f",&a);
+    printf("ingresa un numero ");
+    scanf("%f",&b);
+    
+    
+    
+}
+
+
+
+
+float suma(float x , float y)         
+
+{
+    
+    
+    
+    c = x + y;
+    
+    return c;            /* Retorna ese valor cuando la funcion sea llamada */
+    
+    
+}
+
+float resta(float x , float y)         
+
+{
+    
+    
+   
+    c = x - y;
+    
+    return c;
+    
+    
+    
+}
+
+float multiplicacion(float x , float y)         
+
+{
+   
+    
+    
+    c = x * y;
+    
+    return c;
+    
+    
+}
+
+float divicion(float x , float y)         
+
+{
+   
+    
+    
+    
+    c = x / y;
+   
+   return c;
+    
+    
+}
+
+
+
+
+
+int main()                       /*funcion principal*/
+
+{
+                 float ejemplo ;
+                  
+
+    printf("\n     Operaciones        ");
+    printf("\n************************");
+	printf("\n*   1.- suma           *");
+	printf("\n*   2.- resta          *");
+	printf("\n*   3.- multiplicacion *");
+	printf("\n*   4.- divicion       *");
+	printf("\n*                      *");
+	printf("\n************************");
+	printf("\n  :    ");
+	scanf("%d",&opcion);
+	
+	
+	switch (opcion) 
+	
+	{
+	
+	case 1 : 
+	                                                  /*LOS DATOS YA DEBEN ESTAR ANTES DE QUE SE OCUPEN, sino no se leen*/
+	                                                   /*CUANDO SE LLAMA A LA FUNCION EN ESE MOMENTO SE LE ENVIAN LOS DATOS*/
+	   datos();                                          /*Le envie los datos a y b porque esos vienen en la funcion datos*/
+	   printf("el resultado es %0.2f \n ", suma(a,b) );    /*Me devolvio el puro return de la funcion suma */
+	                                                  
+	                      break;
+	                                         
+	case 2 : 
+	
+            datos();                                 /*Otra forma de LLAMAR a la funcion y almacenar su RETURN*/
+              ejemplo = resta (a,b) ;              /* SE ALMACENO EL VALOR RETURNADO EN LA VARIABLE EJEMPLO */
+             printf(" %f ",ejemplo);                /* ya almacenada se imprime */ 
+                                        
+                                      
+                        break;
+	                                         
+    case 3 : 
+    
+       datos();
+	   printf("el resultado es %0.2f \n ",multiplicacion (a,b) );                           
+	  
+	                               break;
+	                                         
+    case 4 : 
+    
+	         datos();
+	         printf("el resultado es %0.2f \n ",divicion(a,b));                            
+	                        
+	                        
+	                          break;
+	                                         
+	
+	}                                         
+	                                                                               
+	                                         
+	
+   
+    
+}
+

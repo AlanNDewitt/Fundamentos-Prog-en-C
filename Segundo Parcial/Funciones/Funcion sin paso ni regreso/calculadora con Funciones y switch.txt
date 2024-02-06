@@ -1,0 +1,126 @@
+#include <stdio.h>
+
+float a,b,c; 
+int opcion;                   /* variables globales */
+
+
+datos()                       /* funcion prototipo " sin paso , ni regreso " no regresan valor SOLO PROCESOS */
+
+{
+    
+    
+    printf("ingresa un numero ");
+    scanf("%f",&a);
+    printf("ingresa un numero ");
+    scanf("%f",&b);
+    
+    
+    
+}
+
+
+
+
+suma()         
+
+{
+    
+    datos();
+    c=a+b;
+    printf("el resultado es %0.2f \n ",c);
+    
+    
+}
+
+resta()         
+
+{
+    
+    datos();
+    c=a-b;
+    printf("el resultado es %0.2f \n ",c);
+    
+    
+}
+
+multiplicacion()         
+
+{
+    
+    datos();
+    c=a*b;
+    printf("el resultado es %0.2f \n ",c);
+    
+    
+}
+
+divicion()         
+
+{
+    
+    datos();
+    c=a/b;
+    printf("el resultado es %0.2f \n ",c);
+    
+    
+}
+
+
+
+
+
+int main()                       /*funcion principal*/
+
+{
+    
+    printf("\n     Operaciones        ");
+    printf("\n************************");
+	printf("\n*   1.- suma           *");
+	printf("\n*   2.- resta          *");
+	printf("\n*   3.- multiplicacion *");
+	printf("\n*   4.- divicion       *");
+	printf("\n*                      *");
+	printf("\n************************");
+	printf("\n  :    ");
+	scanf("%d",&opcion);
+	
+	
+	switch (opcion) 
+	
+	{
+	
+	case 1 : 
+	         
+	         suma();
+	                      break;
+	                                         
+	case 2 : 
+	
+             resta();
+            
+                        break;
+	                                         
+    case 3 : 
+    
+	          multiplicacion();                            
+	                               break;
+	                                         
+    case 4 : 
+	         
+	           divicion();                            
+	                          break;
+	                                         
+	
+	}                                         
+	                                                                               
+	                                         
+	
+   
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+float a,b;     /* variables globales */
+
+float suma()         /* funcion prototipo " sin paso y CON REGRESO DE PARAMETROS "  regresa valor */
+
+{
+    
+    
+    printf("ingresa un numero ");
+    scanf("%f",&a);
+    printf("ingresa un numero ");
+    scanf("%f",&b);
+    
+    float c;
+    c=a+b;
+    
+    printf("el resultado es %f \n ",c);
+    return c;                                /* para eso es el return para que regrese ese valor al ser llamada*/
+    
+}
+
+
+
+int main()                       /*funcion principal*/
+
+{
+            
+    
+    
+    suma();                      /* llamado de la FUNCION */
+    
+    
+}
